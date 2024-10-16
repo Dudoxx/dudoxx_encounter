@@ -5,6 +5,13 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_encounter_my" model="ir.actions.act_window">
+        <field name="name">My Encounters</field>
+        <field name="res_model">dudoxx.encounter</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('doctor_id', '=', uid)]</field>
+    </record>
+
     <record id="view_encounter_form" model="ir.ui.view">
         <field name="name">encounter.form</field>
         <field name="model">dudoxx.encounter</field>
