@@ -1,0 +1,6 @@
+<odoo>
+    <menuitem id="menu_encounter_root" name="Encounters" sequence="10"/>
+
+    <menuitem id="menu_all_encounters" name="All Encounters" parent="menu_encounter_root" action="action_encounter_all" sequence="10"/>
+    <menuitem id="menu_my_encounters" name="My Encounters" parent="menu_encounter_root" action="action_encounter_my" sequence="20"/>
+</odoo>
