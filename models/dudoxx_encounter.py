@@ -14,6 +14,7 @@ class Encounter(models.Model):
         ('done', 'Done'),
         ('cancelled', 'Cancelled')
     ], string='Status', default='draft')
+    encounter_line_ids = fields.One2many('dudoxx.encounter.line', 'encounter_id', string='Encounter Lines')
 
 class EncounterLine(models.Model):
     _name = 'dudoxx.encounter.line'

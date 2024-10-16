@@ -5,8 +5,9 @@
     "category": "Healthcare",
     "depends": ["base", "web"],
     "data": [
-        "security/ir.model.access.csv",
+      
         "views/dudoxx_encounter_views.xml",
+          "security/ir.model.access.csv",
         "views/main_menu.xml"
     ],
     "assets": {
@@ -15,6 +16,6 @@
             "dudoxx_encounter/static/src/js/dudoxx_encounter.js"
         ]
     },
-    "installable": true,
-    "application": true
+    "installable": True,
+    "application": True,
 }
